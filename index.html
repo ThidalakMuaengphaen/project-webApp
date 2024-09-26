@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> index </title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <header class="navbar-heasder">
+        <img class="logo" src="images/logoMenumagic.png" alt="logo">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">สุ่มอาหาร</a></li>
+                    <li><a href="menuPage.html">เมนูอาหาร</a></li>
+                </ul>
+            </nav>
+        <a class="login" href="#"><button>เข้าสู่ระบบ</button></a>
+    </header>
+    <!-- สร้าง grid แบ่งสองฝั่ง -->
+    <main>
+        <!-- หน้า Random ฝั่งซ้าย -->
+        <section id="imgRandom">
+            <img class="machine" src="https://assets.codepen.io/2509128/gotcha.svg" />
+        </section>
+        <!-- หน้า Random ฝั่งขวา -->
+        <section id="menuRandom">
+            <!-- สร้างกรอบครอบรวม ทั้งหัวข้อ filter-->
+            <div class="filter">
+                <h1> ประเภทอาหาร </h1>
+                <hr width=80% size=5 color="black"><br>
+                <!-- เฉพาะแยกหมวดหมู่ -->
+                <div class="filter-grid">
+                    <button class="category"><b>ทุกประเภท</b></button>
+                    <button class="category"><b>แกง</b></button>
+                    <button class="category"><b>ผัด</b></button>
+                    <button class="category"><b>ยำ</b></button>
+                    <button class="category"><b>ทอด</b></button>
+                    <button class="category"><b>ของหวาน</b></button>
+                </div>
+            </div>
+            <button id="randomBtn"><b>สุ่ม</b></button>
+        </section>
+    </main>
+
+</body>
+
+</html>

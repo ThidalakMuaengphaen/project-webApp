@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> menuPage </title>
+    <link rel="stylesheet" href="css/menuPage.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <header class="navbar-heasder">
+        <img class="logo" src="images/logoMenumagic.png" alt="logo">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">สุ่มอาหาร</a></li>
+                    <li><a href="menuPage.html">เมนูอาหาร</a></li>
+                </ul>
+            </nav>
+        <a class="login" href="#"><button>เข้าสู่ระบบ</button></a>
+    </header>
+    <div id="hero"> <!-- ส่วนหัวของหน้า ประกอบไปด้วย filter, search, addMenu -->
+        <h1> ประเภทอาหาร </h1>
+        <hr width=90% size=5 color="black"><br>
+        <div class="filter-grid">
+            <button class="category"><b>ทุกประเภท</b></button>
+            <button class="category"><b>แกง</b></button>
+            <button class="category"><b>ผัด</b></button>
+            <button class="category"><b>ยำ</b></button>
+            <button class="category"><b>ทอด</b></button>
+            <button class="category"><b>ของหวาน</b></button>
+
+            <input class="form-search" type="search" placeholder="Search your MENU" aria-label="Search">
+            <!-- btn add -->
+            <button id="addMenu"><b>เพิ่มเมนู</b></button> <!-- ใช้ class เดียวกันกับอันอื่นก็ดี-->
+        </div>
+    </div>
+    <!--สร้าง gard menu เอาไว้ดึง database-->
+    <section id="menu-gard">
+        <div class="menus">
+            <h3>ข้าวผัด</h3>
+            <img src="https://kku.world/997gn" alt="ข้าวผัด" />
+            <p>ประเภท : <span>ผัด</span></p>
+        </div>
+        <div class="menus">
+            <h3>ยำกุ้งสด</h3>
+            <img src="https://kku.world/aqkf1" alt="ข้าวผัด" />
+            <p>ประเภท : <span>ยำ</span></p>
+        </div>
+        <div class="menus">
+            <h3>ไก่ทอด</h3>
+            <img src="https://kku.world/edc44" alt="ข้าวผัด" />
+            <p>ประเภท : <span>filter</span></p>
+        </div>
+        <div class="menus">
+            <h3>บัวลอย</h3>
+            <img src="https://kku.world/eqxbf" alt="ข้าวผัด" />
+            <p>ประเภท : <span>ของหวาน</span></p>
+        </div>
+        <div class="menus">
+            <h3>ก๋วยเตี๋ยวคั่วไก่</h3>
+            <img src="https://kku.world/0oszw" alt="ข้าวผัด" />
+            <p>ประเภท : <span>ผัด</span></p>
+        </div>
+    </section>
+</body>
+
+</html>
