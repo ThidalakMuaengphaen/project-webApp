@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+
+    <!-- ======= Navbar ======= -->
+    <header>
+        <a href="index.html"><img class="logo" src="images/logoMenumagic.png" alt="logo"></a>
+        <div class="nav-container">
+            <a class="login" href="login.html"><button>เข้าสู่ระบบ</button></a>
+            <a class="login" href="register.html"><button>ลงทะเบียน</button></a>
+        </div>
+    </header> <!-- End Navbar -->
+
+    <!-- ======= register-container ======= -->
+    <div class="form-wrapper">
+        <div class="register-container">
+            <div class="register-form">
+                <img class="logo-login" src="images/logoMenumagic.png" alt="logo">
+                <form>
+                    <button type="button" id="google-login">เข้าสู่ระบบด้วย Google</button>
+                    <div class="divider-container">
+                        <div class="line"></div>
+                        <span class="text">หรือ</span>
+                        <div class="line"></div>
+                    </div>
+                    <input type="text" id="username" name="username" placeholder="ชื่อผู้ใช้งาน">
+                    <input type="password" id="password" name="password" placeholder="รหัสผ่าน">
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="ยืนยันรหัสผ่าน">
+                    <input type="email" id="email" name="email" placeholder="อีเมล">
+                    <button type="submit">ลงทะเบียน</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="login-container">
+            <div class="login">
+                <span class="text-login">มีบัญชีอยู่แล้ว? <a href="login.html">เข้าสู่ระบบ</a></span>
+            </div>
+        </div> <!-- register-container -->
+    </div>
+</body>
+
+</html>

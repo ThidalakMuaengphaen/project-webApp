@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
+    font-family: 'Kanit', sans-serif;
     box-sizing: border-box;
 }
 
@@ -133,10 +136,11 @@ button:hover {
     justify-content: center;
     gap: 50px;
     margin-top: 70px;
+    font-size: 20px;
 }
 
 .menus {
-    background-color: bisque;
+    background-color: #fff7bb;
     text-align: center;
     border-radius: 8px;
     box-shadow: 0 30px 50px rgba(0,0,0,.2);
@@ -145,8 +149,7 @@ button:hover {
 }
 
 .menus img {
-    width: 50%;
-    height: 50%;
+    width: 70%;
     border-radius: 8px;
 }
 

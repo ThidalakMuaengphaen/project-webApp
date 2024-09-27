@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 * {
     box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
 }
 
 body {
     margin: 0;
     padding: 0;
 }
+
 /*******navbar********/
 li,
 a,
@@ -16,24 +21,27 @@ button {
 }
 
 header {
-    background-color: #FF86B4; /* bg nav */
-    padding: 10px; 
+    background-color: #FF86B4;
+    /* bg nav */
+    padding: 10px;
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
-     width: 300px;
-     height: auto;
-     padding-left: 50px;
+    width: 300px;
+    height: auto;
+    padding-left: 50px;
 }
 
 /* Menubar */
 .navbar {
     list-style: none;
-    margin: 0 auto; /* จัดวางให้ตรงกลาง */
-    background-color: #fffff5;  /* กรอบพื้นหลัง */
+    margin: 0 auto;
+    /* จัดวางให้ตรงกลาง */
+    background-color: #fffff5;
+    /* กรอบพื้นหลัง */
     border: none;
     border-radius: 50px;
     padding: 1px 20px;
@@ -48,17 +56,19 @@ header {
 }
 
 .navbar li {
-    flex-grow: 1; /* ทำให้แต่ละ <li> ขยายเต็มพื้นที่เท่ากัน */
-    text-align: center; 
+    flex-grow: 1;
+    /* ทำให้แต่ละ <li> ขยายเต็มพื้นที่เท่ากัน */
+    text-align: center;
 }
 
 .navbar li a {
-    display: block; 
+    display: block;
     padding: 15px 40px;
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-size: 25px;
-    position: relative; /* เพิ่มตำแหน่ง relative เพื่อให้ ::after ใช้งานได้ */
+    position: relative;
+    /* เพิ่มตำแหน่ง relative เพื่อให้ ::after ใช้งานได้ */
     transition: 0.3s ease;
 }
 
@@ -72,17 +82,17 @@ header {
     background-color: #FFFCAC;
     border-radius: 50px;
     height: 100%;
-   
- }
 
- /* Log in Button */
- button {
+}
+
+/* Log in Button */
+button {
     padding: 9px 25px;
     background-color: #FFFCAC;
     border: none;
     border-radius: 50px;
     transition: all 0.3s ease 0s;
- }
+}
 
 button:hover {
     background-color: #C4F8FF;
@@ -91,6 +101,7 @@ button:hover {
 .login {
     padding-right: 50px;
 }
+
 /*******end navbar********/
 
 main {
@@ -123,11 +134,12 @@ main #menuRandom {
     margin-right: 550px;
     font-size: 40px;
 }
+
 /* การจัดเรียง block filter */
 .filter-grid {
     padding-left: 100px;
     display: grid;
-    grid-template-columns: repeat(3 , 150px);
+    grid-template-columns: repeat(3, 150px);
     gap: 30px;
     margin: 0 auto;
 }
@@ -157,6 +169,7 @@ main #menuRandom {
     transition: all 0.3s ease 0s;
 }
 
-#randomBtn:hover , .category:hover {
+#randomBtn:hover,
+.category:hover {
     background-color: #C4F8FF;
 }

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/addMenu.css">
+    <title>Add Menu</title>
+</head>
+
+<body>
+    <!-- ======= Navbar ======= -->
+    <header class="navbar-heasder">
+        <img class="logo" src="images/logoMenumagic.png" alt="logo">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">สุ่มอาหาร</a></li>
+                <li><a href="menuPage.html">เมนูอาหาร</a></li>
+            </ul>
+        </nav>
+        <a class="login" href="login.html"><button>เข้าสู่ระบบ</button></a>
+    </header> <!-- End Navbar -->
+
+
+    <div class="container">
+
+        <!-- ======= Drop-Image ======= -->
+        <h2>เพิ่มเมนูที่ต้องการ</h2>
+        <div class="dropimage-container">
+            <div class="drag-area">
+                <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                <header>ลาก หรือวางเพื่ออัปโหลดรูปภาพ</header>
+                <span>OR</span>
+                <button>เลือกรูปภาพจากอุปกรณ์</button>
+                <input type="file" hidden>
+            </div>
+        </div> <!-- End Drop-Image -->
+
+        <!-- ======= Food filter form ======= -->
+        <div class="from-container">
+            <div class="form-field">
+                <label for="idNumber">ชื่ออาหาร:</label>
+                <input type="text" id="idNumber" name="idNumber" placeholder="ชื่อเมนู...">
+            </div>
+            <div class="form-field">
+                <label for="select">ประเภท:</label>
+                <select class="select-form" id="select" name="foodType" aria-label="ประเภทอาหาร">
+                    <option value="">เลือกประเภทอาหาร</option>
+                    <option>แกง</option>
+                    <option>ทอด</option>
+                    <option>ยำ</option>
+                    <option>ผัด</option>
+                    <option>ย่าง</option>
+                    <option>ของหวาน</option>
+                </select>
+            </div>
+        </div> <!-- End Food filter form -->
+
+        <!-- ======= Button OK & Cancel ======= -->
+        <div>
+            <div class="button-container">
+                <a class="ok" href="#"><button>บันทึกข้อมูล</button></a>
+                <a class="cancle" href="#"><button>ยกเลิก</button></a>
+            </div>
+        </div> <!-- Button OK & Cancel -->
+
+    </div>
+
+    <script src="js/addMenu.js"></script>
+
+</body>
+
+</html>
